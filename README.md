@@ -1,0 +1,4 @@
+modpipe
+=======
+
+Modular analysis pipeline
