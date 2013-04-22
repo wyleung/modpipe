@@ -4,3 +4,6 @@ include ./conf.mk
 
 %.bam: $(IN)
 	$(MAKE) -f modules/$(ALIGNER).mk IN="$^" $@
+
+%.bam.bai: %.bam
+	$(SAMTOOLS) index $<

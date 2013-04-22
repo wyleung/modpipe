@@ -1,6 +1,6 @@
-*.bam
+*.ba*
 *.vcf
 *.sam
-*.fastq
+*.fast*
 *~
 

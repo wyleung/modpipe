@@ -15,7 +15,7 @@ aligment: $(addsuffix .bam, $(SAMPLE))
 	$(MAKE) -f ./modules/fastqc.mk $@
 
 %.bam: %$(PEA_MARK).$(FASTQ_EXTENSION) %$(PEB_MARK).$(FASTQ_EXTENSION)
-	$(MAKE) -f ./modules/alignment.mk IN="$^" $@
+	$(MAKE) -f ./modules/alignment.mk IN="$^" $@ $@.bai
 
 
 
